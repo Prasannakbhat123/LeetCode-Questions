@@ -35,7 +35,7 @@ public:
                 if(nums[ind]<=target) take=dp[ind-1][target-nums[ind]];
 
                 // Either take or not take
-                dp[ind][target]=take || notTake;
+                dp[ind][target]=take || notTake; // dp[ind][target] tells if sum 'target' is possible with first 'ind' elements
             }
         }
 
